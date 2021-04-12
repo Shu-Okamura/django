@@ -1,0 +1,163 @@
+@import "../setting/variable.scss";
+
+@media not all and (min-height: 500px) {
+  .breadcrumb{
+    padding-top: 50px;
+    .bc-list{
+      li{
+        font-size: 10px;
+        a{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  #header{
+    height: 50px;
+    .h-container{
+      a{
+        #h1{
+          font-size: 14px;
+          .h1-small{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .nav{
+      margin-right: 15px;
+      .n-btn{
+        i{
+          font-size: 25px;
+        }
+      }
+      .n-totop{
+        a{
+          width: 25px!important;
+          height: 25px!important;
+          i{
+            font-size: 16px!important;
+          }
+        }
+      }
+    }
+    .n-container{
+      nav{
+        .n-title{
+        }
+        ul{
+          height: 150px!important;
+          li{
+            height: 25px!important;
+            a{
+              p{
+                font-size: 16px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #top{
+    height: auto;
+    .t-content{
+      .t-sentense{
+        p{
+          padding-top: 120px;
+        }
+      }
+      .t-nav{
+      }
+    }
+  }
+  #works{
+    .w-container{
+      .w-sentense{
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  #contact{
+    .c-container{
+      .c-sentense{
+        font-size: 12px;
+      }
+      .c-form{
+        form{
+          .c-confirm{
+            .c-cf-sentense{
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #send{
+    .s-wrapper{
+      width: 70%;
+      margin-bottom: 30px;
+      h2{
+        font-size: 30px!important;
+        padding-top: 20px;
+      }
+      .s-container{
+        margin: 15px 0 15px 0;
+        p{
+          font-size: 10px;
+        }
+        a{
+          margin-top: 20px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  #w-page{
+    h3{
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .w-p-container{
+      .w-p-slide{
+        padding: 20px 140px;
+        .slick-prev{
+          left: -75px;
+        }
+        .slick-next{
+          right: -75px;
+        }
+        .slick-w-wrapper{
+          .slick-list{
+            .slick-slide{
+              .w-p-imgbox{
+                img{
+                  height: 300px;
+                }
+                p{
+                  padding: 10px;
+                  font-size:10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .w-p-text{
+        .w-p-item{
+          .w-p-theme{
+            font-size: 20px;
+          }
+          .w-p-sentense{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

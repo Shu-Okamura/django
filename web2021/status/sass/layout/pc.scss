@@ -1,0 +1,312 @@
+@import "../setting/variable.scss";
+
+@media (min-width: 1025px) and (min-height: 500px) {
+  body{
+    #main{
+      section{
+        // min-height: 100vh;
+      }
+    }
+  }
+  .breadcrumb{
+    .bc-list{
+      li{
+        a{
+          position: relative;
+          &::after{
+            position: absolute;
+            bottom: -5px; left: 0;
+            content: "";
+            width: 100%; height: 1px;
+            background-color: $blue;
+            transform: scale(0,1);
+            transform-origin: right top;
+            transition: transform .3s;
+          }
+          &:hover{
+            color: $blue;
+            transition-duration: 300ms;
+          }
+          &:hover::after{
+            transform-origin: left top ;
+            transform: scale(1,1) ;
+          }
+        }
+      }
+    }
+  }
+  #header{
+    .h-container{
+      a:hover{
+        .h1-down{
+            animation-name: h1Up;
+        }
+      }
+      .nav{
+        .n-btn{
+          i{
+            opacity: 0.7;
+              transition-duration: 400ms;
+            &:hover{
+              opacity: 1;
+              transition-duration: 400ms;
+            }
+          }
+        }
+        .n-totop{
+          opacity: 0.7;
+          &:hover{
+            opacity: 1;
+            animation-name: totopMove;
+            animation-duration: 400ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+      }
+      .n-container{
+        nav{
+          ul{
+            li{
+              .n-item{
+                &:hover{
+                  background-color: $blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #top{
+    .t-content{
+      padding-top: 150px;
+      .t-sentense{
+        p{
+          padding-top: 200px;
+          font-size: 70px;
+        }
+      }
+      .t-nav{
+        width: 65%;
+        justify-content: space-between;
+        .t-btn{
+          width: 200px;
+          border: 1px solid rgba(0,0,0,0);
+          &:hover{
+            background-color: lighten($green, 10%);
+            border: 1px solid $white;
+            transition-duration: 500ms;
+            transition-timing-function: ease;
+          }
+        }
+      }
+    }
+  }
+
+  #profile{
+    // min-height: $maxViewHeight !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    .p-container{
+      margin-bottom: 30px;
+      .p-face{
+        .p-img{
+          img{
+            height: 150px;
+          }
+        }
+      }
+      .p-skill{
+        width: 90%;
+        justify-content: space-between;
+        align-items: flex-start;
+        .p-s-item{
+          width: 30%;
+          .p-s-title{
+            font-size: 20px;
+          }
+          .p-s-wrapper{
+            .p-s-box{
+              margin: 30px 0 10px 0;
+              .p-s-content{
+                font-size: 12px;
+                padding-bottom: 10px;
+              }
+              .p-s-tag{
+                font-size: 12px;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #works{
+    .w-container{
+      width: 80%;
+      padding-bottom: 100px;
+      .w-item{
+        width: 30%;
+        height:400px;
+        .w-wrapper{
+          &:hover{
+            transform:scale(1.2,1.2);
+            transition-duration: 500ms;
+            img{
+              opacity: 0.3;
+              transition-duration: 500ms;
+            }
+          }
+          p{
+            font-size: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  #contact{
+    .c-container{
+      width: 60%;
+      .c-form{
+        form{
+          justify-content: space-between;
+          .c-item{
+            width: 48%;
+            label{
+              width: 100%;
+            }
+            input.c-inputarea{
+              width: 100%;
+            }
+          }
+          .c-i-long{
+            width: 100%!important;
+          }
+          .c-confirm{
+            .reset-modal{
+              .reset-wrapper{
+                .reset-container{
+                  .reset-btn{
+                    &:hover{
+                      background-color: lighten($green, 10%);
+                      color: white;
+                      transition-duration: 500ms;
+                      transition-timing-function: ease;
+                    }
+                  }
+                }
+              }
+            }
+            .c-cf-sentense{
+              p{
+                width: 90%;
+              }
+            }
+            .c-cf-wrapper{
+              .c-btn{
+                &:hover{
+                  background-color: lighten($green, 10%);
+                  border: 1px solid $white;
+                  transition-duration: 500ms;
+                  transition-timing-function: ease;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #confirm{
+    .cf-container{
+      form{
+        .cf-btn-wrapper{
+          .cf-btn{
+            &:hover{
+              background-color: lighten($green, 10%);
+              border: 3px solid $white;
+              transition-duration: 500ms;
+              transition-timing-function: ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #send{
+    .s-wrapper{
+      width: 60%;
+      .s-container{
+        a:hover{
+          background-color: lighten($green, 10%);
+          border: 1px solid $white;
+          transition-duration: 500ms;
+          transition-timing-function: ease;
+        }
+      }
+    }
+  }
+
+  #w-page{
+    .w-p-container{
+      .w-p-slide{
+        padding: 50px 80px;
+        .slick-prev,.slick-next{
+          width: 40px;
+          height: 40px;
+          &::before{
+            font-size: 40px;
+          }
+        }
+        .slick-prev{
+         left: -15px;
+        }
+        .slick-next{
+          right: -15px;
+        }
+        .slick-w-wrapper{
+          .slick-list{
+            .slick-slide{
+              .w-p-imgbox{
+                img{
+                  height: 600px;
+                }
+                p{
+                  padding: 20px;
+                  font-size:18px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .w-p-text{
+        width: 75%;
+      }
+    }
+  }
+
+  #footer{
+    height: 180px;
+    ul{
+      .f-icon{
+      }
+      .f-icon:hover{
+        animation-name: footerIcon;
+        animation-duration: 1000ms;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import "../setting/variable.scss";
+
+#w-page{
+  background-color: $darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  h3{
+    font-size: 20px;
+    font-family: $gothicB;
+    display: inline-block;
+    width: auto;
+    margin-top: 40px;
+    border-bottom: 2px solid $white;
+    padding: 10px;
+  }
+  .w-p-container{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .w-p-slide{
+      padding: 20px 35px;
+      .slick-w-wrapper{
+        .slick-prev{
+          z-index: 9;
+          left: -20px;
+        }
+        .slick-next{
+          z-index: 9;
+          right: -20px;
+        }
+        .slick-dots{
+          li{
+            button::before{
+              color: $white;
+            }
+          }
+        }
+        .slick-list{
+          .slick-slide{
+            .w-p-imgbox{
+              max-width: 100%;
+              img{
+                height: 250px;
+                width: 100%;
+                object-fit: contain;
+              }
+              p{
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                font-size:10px;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .w-p-text{
+      width: 80%;
+      .w-p-item{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .w-p-theme{
+          padding: 5px;
+          border-bottom: 2px solid lighten($green,30%);
+          color: lighten($green,30%);
+          text-align: center;
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-family: $gothicB;
+        }
+        .w-p-sentense{
+          width: 100%;
+          display: block;
+          font-size: 10px;
+          line-height: 13px;
+          text-align: center;
+          padding:5px 10px;
+          a{
+            text-decoration: none;
+            color: lighten($blue,40%);
+            &::after{
+              font-weight: bold;
+              content: "\f360";
+              font-family: "Font Awesome 5 Free";
+              padding-left: 8px;
+            }
+          }
+        }
+        .onmark::before{
+          content: "\f058";
+          color: lighten($green,20%);
+          font-family: "Font Awesome 5 Free";
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+}

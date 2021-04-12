@@ -1,0 +1,121 @@
+@import "../setting/variable.scss";
+
+#confirm{
+  background-color: $darkgray;
+  width: 100%;
+  min-height: $maxViewHeight;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .breadcrumb{
+    position: absolute;
+    top: 0; left: 0;
+  }
+  .cf-container{
+    width: 80%;
+    margin-top: 20px;
+    .cf-sentense{
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 10px;
+      line-height: 18px;
+    }
+    form{
+      width: 100%;
+      .cf-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        padding:10px;
+        label{
+          width: 100%;
+          font-size: 12px;
+          color: lighten($green,20%);
+          padding: 0 0 10px 5px;
+        }
+        .cf-content{
+          width: 100%;
+          font-size: 14px;
+          background-color: black;
+          padding: 10px 5px;
+          white-space: pre-wrap;
+          color: $white;
+        }
+      }
+      .cf-btn-wrapper{
+        width: 100%;
+        margin:30px 0 50px 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        .cf-btn{
+          width: 100px;
+          padding: 10px;
+          border: 1px solid $white;
+          border-radius: 0!important;
+          -webkit-appearance: none!important;
+          background-color: lighten($green,15%);
+          color: white;
+          font-size: 13px;
+          font-family: $gothicB;
+        }
+      }
+    }
+  }
+}
+
+#send{
+  min-height: $maxViewHeight;
+  background-color: $darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .breadcrumb{
+    position: absolute;
+    top: 0; left: 0;
+  }
+  .s-wrapper{
+    width: 80%;
+    background-color: $black;
+    // border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    h2{
+      padding-top: 30px;
+    }
+    .s-container{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
+      flex-wrap: wrap;
+      margin: 50px 0 20px 0;
+      p{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        line-height: 20px;
+      }
+      a{
+        text-decoration: none;
+        display: block;
+        margin-top: 30px;
+        padding: 15px;
+        border: 1px solid $white;
+        // border-radius: 5px;
+        background-color:$darkgray;
+        color: white;
+        font-family: $gothicB;
+      }
+    }
+  }
+}
